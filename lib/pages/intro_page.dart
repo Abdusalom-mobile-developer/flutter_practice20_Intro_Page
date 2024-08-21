@@ -53,6 +53,7 @@ class _IntroPageState extends State<IntroPage> {
     );
   }
 
+  // Bottom Indicator Widget Maker
   Widget _indicatorMaker(bool isCurrent) {
     return AnimatedContainer(
       duration: Duration(microseconds: 380),
@@ -65,6 +66,7 @@ class _IntroPageState extends State<IntroPage> {
     );
   }
 
+  // Method that makes the list of Indicators
   List<Widget> _indicatorsList() {
     List<Widget> list = [];
 
@@ -78,7 +80,6 @@ class _IntroPageState extends State<IntroPage> {
         width: 4,
       ));
     }
-
     return list;
   }
 
